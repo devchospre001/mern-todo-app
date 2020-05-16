@@ -1,0 +1,91 @@
+@import "../base/settings.scss";
+
+.main-container {
+  width: 100%;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+
+  .sub-container {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    background-color: $pearl;
+    padding: $xxl $xxxl;
+    border-radius: $n;
+    box-shadow: 2px 15px 22px rgba(0, 0, 0, 0.3);
+
+    .main-title {
+      text-align: center;
+      font-size: $xl;
+      text-transform: uppercase;
+      letter-spacing: $xs;
+
+      .color-t {
+          color: $danger;
+      }
+
+      .color-o {
+          color: $warning-dark;
+      }
+
+      .color-dash {
+          color: $dark-gray;
+      }
+
+      .color-d {
+          color: $blueish;
+      }
+
+      .color-o2 {
+          color: $success;
+      }
+    }
+
+    .todos-start {
+      text-decoration: none;
+      text-align: center;
+      margin-top: $n;
+      background-color: $warning;
+      padding: $xs $xl;
+      border-radius: $n;
+      color: $pureb;
+      font-size: $size-s;
+    }
+
+    .todos-support {
+      text-decoration: none;
+      text-align: center;
+      margin-top: $n;
+      background-color: $dark-gray;
+      padding: $xs $xl;
+      border-radius: $n;
+      color: $pearl;
+      font-size: $size-s;
+    }
+
+    .todos-start:hover {
+      transition: 400ms all ease-out;
+      background-color: $success;
+      color: $pearl;
+    }
+
+    .todos-support:hover {
+      transition: 400ms all ease-out;
+      background-color: $danger;
+      color: $pearl;
+    }
+  }
+
+  .box {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+
+    .image-todos {
+      position: absolute;
+      left: 60%;
+      top: 15%;
+    }
+  }
+}

@@ -1,0 +1,110 @@
+@import "../base/settings.scss";
+
+.main-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .sub-container {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    flex-direction: column;
+    background-color: $pearl;
+    padding: $xxl $xxxl;
+    border-radius: $n;
+    box-shadow: 2px 15px 22px rgba(0, 0, 0, 0.3);
+
+    .row-title {
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+
+      h2 {
+        color: $danger;
+      }
+    }
+
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      .text-input {
+        width: 50%;
+        padding: $xs $l;
+        background-color: $warning;
+        border: none;
+        text-align: center;
+        border-radius: $n;
+        transition: 250ms all ease-in;
+      }
+
+      .text-input:focus {
+        outline: none;
+        font-size: $size-xs-n;
+        transition: 250ms all ease-in;
+      }
+
+      .text-input::placeholder {
+        color: $dark-gray;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+      }
+    }
+
+    .insert-todo {
+      margin: $xs;
+      padding: $xs $xl;
+      background: $danger;
+      color: $pearl;
+      border: none;
+      border-radius: $n;
+      font-weight: 700;
+      font-size: $size-xs-n;
+      transition: 350ms all ease-out;
+    }
+
+    .insert-todo:hover {
+      background: $success;
+      color: $pearl;
+      transition: 350ms all ease-out;
+    }
+
+    .insert-todo:focus {
+      outline: none;
+    }
+
+    .unordered-list-container {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      margin-right: 40px;
+
+      .list-items {
+        list-style-type: none;
+
+        .bolder-number {
+          font-weight: 700;
+        }
+
+        .item {
+          padding: $xs $s;
+          border-radius: $xs;
+          background-color: $blueish;
+          color: $pearl;
+          margin: $xs;
+        }
+      }
+    }
+  }
+}

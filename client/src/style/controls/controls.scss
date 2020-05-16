@@ -1,0 +1,26 @@
+@import '../base/settings.scss';
+
+.insert-todo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: $xs $l;
+    margin-top: 10px;
+    transition: 250ms all ease-out;
+    background-color: $danger;
+    border: none;
+    border-radius: $n;
+    color: $pearl;
+    font-weight: 700;
+}
+
+.insert-todo:hover {
+    background-color: $success;
+    padding: $xs $xl;
+    border-radius: $l;
+}
+
+.insert-todo:focus {
+    outline: none;
+}
