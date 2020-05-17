@@ -45,18 +45,18 @@
         text-align: center;
         border-radius: $n;
         transition: 250ms all ease-in;
-      }
 
-      .text-input:focus {
-        outline: none;
-        font-size: $size-xs-n;
-        transition: 250ms all ease-in;
-      }
+        &:focus {
+          outline: none;
+          font-size: $size-xs-n;
+          transition: 250ms all ease-in;
+        }
 
-      .text-input::placeholder {
-        color: $dark-gray;
-        font-weight: bold;
-        letter-spacing: 0.5px;
+        &::placeholder {
+          color: $dark-gray;
+          font-weight: bold;
+          letter-spacing: 0.5px;
+        }
       }
     }
 
@@ -70,16 +70,16 @@
       font-weight: 700;
       font-size: $size-xs-n;
       transition: 350ms all ease-out;
-    }
 
-    .insert-todo:hover {
-      background: $success;
-      color: $pearl;
-      transition: 350ms all ease-out;
-    }
+      &:hover {
+        background: $success;
+        color: $pearl;
+        transition: 350ms all ease-out;
+      }
 
-    .insert-todo:focus {
-      outline: none;
+      &:focus {
+        outline: none;
+      }
     }
 
     .unordered-list-container {

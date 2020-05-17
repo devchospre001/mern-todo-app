@@ -21,8 +21,6 @@ export default function Todos() {
       !todo.id !== id ? todo.content === content : console.error("error")
     );
     setTodos(filter);
-
-    setTodos(filter);
   };
 
   return (
